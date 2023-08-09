@@ -1,0 +1,86 @@
+create table tbl_account(
+id int primary key AUTO_INCREMENT,
+username varchar(255),
+email varchar(255) UNIQUE,
+paswwrd text(1100),
+role int,
+status int 
+);
+
+
+create table tbl_slider(
+id int primary key AUTO_INCREMENT,
+heading text(255),
+text text(255),
+image text(1100),
+category varchar(100),
+url text,
+status int 
+);
+
+
+create table tbl_category(
+id int primary key AUTO_INCREMENT,
+category varchar(255) UNIQUE,
+status int 
+);
+
+
+create table tbl_video(
+id int primary key AUTO_INCREMENT,
+video text(1100),
+url text(1100),
+thumbnail text(1100),
+voption varchar(100),
+status int
+);
+
+
+CREATE TABLE tbl_game(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title text(255) NOT NULL,
+    genre text(255),
+    releaseDate DATE,
+    publisher VARCHAR(100),
+    category VARCHAR(50),
+    description TEXT,
+    multiplayerSupport ENUM('Yes', 'No'),
+    dLCsExpansions TEXT,
+    systemRequirements TEXT,
+    screenshots TEXT,
+    trailer text,
+    status int
+);
+
+
+
+create table tbl_review(
+id int primary key AUTO_INCREMENT,
+gameid int(11),
+title text(1100),
+rating int(11),
+review text(1100),
+username varchar(100),
+status int
+);
+
+create table tbl_comment(
+id int primary key AUTO_INCREMENT,
+gameid int(11),
+title text(1100),
+comment text(1100),
+username varchar(100),
+userid int(11),
+status int
+);
+
+
+create table tbl_contact(
+id int primary key AUTO_INCREMENT,
+username varchar(100),
+email text(255),
+title text(1100),
+message text(1100),
+status int
+);
+

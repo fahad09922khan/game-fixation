@@ -1,0 +1,38 @@
+.username {
+    text-transform: capitalize;
+}
+
+.myalert.alert {
+    position: fixed;
+    max-width: 280px;
+    width: fit-content;
+    top: 10px;
+    right: -100%;
+    z-index: 9999;
+    animation: showing 5s;
+}
+
+.myalert ul {
+    margin-bottom: 0;
+    padding-left: 1rem;
+}
+
+@keyframes showing {
+
+    5%,
+    85% {
+        right: 10px;
+    }
+
+    90% {
+        right: -100%;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+.table td {
+    vertical-align: top !important;
+}

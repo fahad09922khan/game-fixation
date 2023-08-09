@@ -1,0 +1,48 @@
+@media screen and (max-width:767.99px) {
+    html {
+        font-size: 14px;
+    }
+    .account__main {
+        background: url('../images/accountimg1.png') center center;
+        background-size: cover;
+    }
+    .account__image {
+        display: none;
+    }
+    .account__title {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .account__form {
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(2px);
+    }
+    .__input {
+        background-color: transparent;
+    }
+    .account__footer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:575.99px) {
+    html {
+        font-size: 13px;
+    }
+    .account__header {
+        justify-content: center;
+    }
+    .account__header p {
+        display: none;
+    }
+    .account__form {
+        padding: 1rem;
+    }
+    .account__text {
+        text-align: center;
+    }
+    .account__footer {
+        padding: 0 1rem;
+        color: var(--white);
+    }
+}
